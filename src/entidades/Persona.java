@@ -16,23 +16,23 @@ public class Persona {
 	private String getApellido() {
 		return Apellido;
 	}
-	private void setApellido(String apellido) {
+	public void setApellido(String apellido) {
 		Apellido = apellido;
 	}
-	private String getDni() {
+	public String getDni() {
 		return Dni;
 	}
 	private void setDni(String dni) {
 		Dni = dni;
 	}
-	private Boolean getHabilitado() {
+	private Boolean isHabilitado() {
 		return Habilitado;
 	}
 	private void setHabilitado(Boolean habilitado) {
 		Habilitado = habilitado;
 	}
 	
-	public void Persona(String nombre, String apellido, String dni, Boolean habilitado)
+	public Persona(String nombre, String apellido, String dni, Boolean habilitado)
 	{
 		this.setNombre(nombre);
 		this.setApellido(apellido);
